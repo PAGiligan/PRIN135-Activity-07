@@ -4,13 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    animation: rowing 3s infinite;
 }
 
 @keyframes rowing {
     0%, 100% {
-        transform: translateY(0);
+        transform: rotate(90deg);
     }
     50% {
-        transform: translateY(-100px);
+        transform: rotate(-90deg);
     }
 }
