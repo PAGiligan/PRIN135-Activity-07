@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    animation: rowing 3s infinite;
+    animation: rowing 2.1s infinite;
 }
 
 @keyframes rowing {
