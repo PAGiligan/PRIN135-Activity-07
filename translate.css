@@ -6,3 +6,37 @@ body {
     margin: 0;
     flex-direction: column;
 }
+.demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4682b4;
+    margin: 50px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+.box.translate:hover {
+    transform: translate(50px, 50px);
+}
+
+.box.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.box.scale:hover {
+    transform: scale(1.5);
+}
+
+.box.skew:hover {
+    transform: skew(30deg, 20deg);
+}
