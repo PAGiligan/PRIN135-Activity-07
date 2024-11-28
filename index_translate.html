@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="translate.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRIN135-Semi-Activity: Translation</title>
+
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+.demo-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 110px;
+    margin: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.box.translate {
+    background-color: red;
+    padding: 10px;
+}
+
+.box.rotate {
+    transform: rotate(20deg);
+    background-color: magenta;
+    margin: 29px;
+}
+
+.box.scale {
+    transform: scale(1.5);
+    background-color: blue;
+}
+
+.box.skew {
+    transform: skew(20deg, 20deg);
+    background-color:yellow;
+}
+    </style>
 </head>
 <body>
     <div class="demo-container">
