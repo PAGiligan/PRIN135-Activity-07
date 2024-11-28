@@ -9,6 +9,9 @@ body {
 .demo-container {
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
 }
 
 .box {
@@ -17,42 +20,28 @@ body {
     background-color: #4682b4;
     margin: 50px;
     cursor: pointer;
-    transition: transform 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
 }
 
-.box.translate{
- background-color: red;
+.box.translate {
+    transform: translate(50px, 50px);
+    background-color: red;
 }
 
 .box.rotate {
+    transform: rotate(45deg);
     background-color: magenta;
 }
 
 .box.scale {
+    transform: scale(1.5);
     background-color: blue;
 }
 
 .box.skew {
-    background-color:yellow;
-}
-
-.box.translate:hover {
-    transform: translate(50px, 50px);
-    
-}
-
-.box.rotate:hover {
-    transform: rotate(45deg);
-}
-
-.box.scale:hover {
-    transform: scale(1.5);
-}
-
-.box.skew:hover {
     transform: skew(30deg, 20deg);
+    background-color:yellow;
 }
