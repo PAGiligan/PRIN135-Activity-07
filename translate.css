@@ -10,30 +10,31 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     display: flex;
+    text-align: center;
 }
 
 .box {
     width: 200px;
     height: 110px;
-    background-color: #4682b4;
-    margin: 50px;
+    margin: 40px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
+    text-align: center;
 }
 
 .box.translate {
-    transform: translate(50px, 50px);
     background-color: red;
+    padding: 10px;
 }
 
 .box.rotate {
-    transform: rotate(45deg);
+    transform: rotate(20deg);
     background-color: magenta;
+    margin: 29px;
 }
 
 .box.scale {
@@ -42,6 +43,6 @@ body {
 }
 
 .box.skew {
-    transform: skew(30deg, 20deg);
+    transform: skew(20deg, 20deg);
     background-color:yellow;
 }
