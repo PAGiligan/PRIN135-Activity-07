@@ -7,14 +7,13 @@ body {
     flex-direction: column;
 }
 .demo-container {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 110px;
     background-color: #4682b4;
     margin: 50px;
     cursor: pointer;
@@ -22,11 +21,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f1f1f1;
+    color: black;
+}
+
+.box.translate{
+ background-color: red;
+}
+
+.box.rotate {
+    background-color: magenta;
+}
+
+.box.scale {
+    background-color: blue;
+}
+
+.box.skew {
+    background-color:yellow;
 }
 
 .box.translate:hover {
     transform: translate(50px, 50px);
+    
 }
 
 .box.rotate:hover {
